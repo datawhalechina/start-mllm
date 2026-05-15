@@ -1,4 +1,4 @@
-- [Start-MLLM](./README.md)
+- [start-mllm](./README.md)
   - [Chapter 0 环境准备](./chapter0-环境准备.md)
   - [前言](./前言.md)
   - [术语表](./术语表.md)
@@ -19,7 +19,5 @@
 
 - <strong>扩展与专题</strong>
   - [扩展阅读](./扩展阅读.md)
-  - [研究向补充（微调与实验记录）](./研究向补充-微调与实验记录.md)
-  - [论文路径附录](./论文路径附录.md)
   - [配图规划](./配图规划.md)
   - [Extra-Chapter 总览](../Extra-Chapter/README.md)

@@ -1,15 +1,14 @@
 <div align="center">
-  <h1>Start-MLLM</h1>
+  <h1>start-mllm</h1>
   <h3>从零开始学习多模态大模型</h3>
   <p><em>从概念、架构、训练到部署，系统搭建你的第一套 MLLM 知识体系</em></p>
 </div>
 
 ---
 
-## 🎯 项目介绍
+## 项目介绍
 
-`Start-MLLM` 是一个面向中文学习者的多模态大模型教程项目，定位为“能读懂、能跑通、能继续扩展”的开源学习仓库。
-
+`start-mllm` 是一个面向中文学习者的多模态大模型教程项目，定位为“能读懂、能跑通、能继续扩展”的开源学习仓库。
 
 这份教程的核心目标不是罗列概念，而是帮你建立一条完整的多模态学习链路：
 
@@ -18,9 +17,9 @@
 3. 接着学习数据、训练、评测、部署与应用设计。
 4. 最后亲手跑通一个视觉语言模型，并做一个简单的图像问答 Demo。
 
-为了让“读懂”真正走向“会做”，各章都会保留**概念 + 工程 + 实战/练习**的层次，但每章侧重点不同：有的偏地图，有的偏数据，有的偏脚本。整体主线见 [前言](./docs/前言.md) 中的「正文章节怎么串起来」表格。
+为了让“读懂”真正走向“会做”，各章都会保留**概念 + 工程 + 实战/练习**的层次。整体主线见 [前言](./docs/前言.md) 中的「正文章节怎么串起来」表格。
 
-## ✨ 你将收获什么
+## 你将收获什么
 
 - 系统理解多模态大模型的核心概念、能力边界与主流技术路线
 - 理解视觉编码器、CLIP、Projector、Connector、Instruction Tuning 的工程角色
@@ -29,9 +28,8 @@
 - 能够基于 `Transformers` 或 OpenAI 兼容接口跑通图文问答
 - 能够进一步把单模态 Agent 扩展成多模态 Agent
 - 能够从教程内容过渡到自己的评测脚本、Demo 和小型开源项目
-- 若以**论文或严谨实验**为目标：正文侧重系统理解与工程闭环；还需自行补全基线、对照、消融与复现（见 [第十章第十一节](./docs/chapter10/第十章%20学习路线与开源项目实战建议.md)）
 
-## 📖 内容导航
+## 内容导航
 
 正文按 **理论篇（第 1～4 章）** 与 **实战篇（第 5～10 章）** 分层，细节见 [前言「理论篇与实战篇」](./docs/前言.md)。
 
@@ -39,51 +37,45 @@
 
 | 章节 | 关键内容 | 状态 |
 | --- | --- | --- |
-| [前言](./docs/前言.md) | 分册说明、依赖表、能力清单 | ✅ |
-| [第一章](./docs/chapter1/第一章%20多模态大模型概览.md) | 模态定义、任务版图、典型能力与误区 | ✅ |
-| [第二章](./docs/chapter2/第二章%20视觉编码器与跨模态对齐.md) | ViT、CLIP、Patch Token、对齐训练 | ✅ |
-| [第三章](./docs/chapter3/第三章%20多模态生成架构.md) | BLIP-2、LLaVA、统一序列建模 | ✅ |
-| [第四章](./docs/chapter4/第四章%20数据、训练与微调.md) | 数据配方、训练流程、LoRA/QLoRA | ✅ |
+| [前言](./docs/前言.md) | 分册说明、依赖表、能力清单 | 完成 |
+| [第一章](./docs/chapter1/第一章%20多模态大模型概览.md) | 模态定义、任务版图、典型能力与误区 | 完成 |
+| [第二章](./docs/chapter2/第二章%20视觉编码器与跨模态对齐.md) | ViT、CLIP、Patch Token、对齐训练 | 完成 |
+| [第三章](./docs/chapter3/第三章%20多模态生成架构.md) | BLIP-2、LLaVA、统一序列建模 | 完成 |
+| [第四章](./docs/chapter4/第四章%20数据、训练与微调.md) | 数据配方、训练流程、LoRA/QLoRA | 完成 |
 
 ### 实战篇
 
 | 章节 | 关键内容 | 状态 |
 | --- | --- | --- |
-| [第五章](./docs/chapter5/第五章%20评测体系与工程选型.md) | 感知、OCR、推理、幻觉与评测脚本模板 | ✅ |
-| [第六章](./docs/chapter6/第六章%20推理部署与%20Serving.md) | 单机推理、服务化、资源规划与观测 | ✅ |
-| [第七章](./docs/chapter7/第七章%20动手跑通你的第一个%20VLM.md) | `Transformers` 推理脚本、OpenAI 兼容客户端与实验任务 | ✅ |
-| [第八章](./docs/chapter8/第八章%20构建一个图像问答%20Demo.md) | `Gradio` 图文问答界面与任务模式 | ✅ |
-| [第九章](./docs/chapter9/第九章%20从单模态%20Agent%20到多模态%20Agent.md) | 多模态感知、工具调用、Agent 骨架与工作流 | ✅ |
-| [第十章](./docs/chapter10/第十章%20学习路线与开源项目实战建议.md) | 进阶路线、扩展方向与开源协作建议 | ✅ |
+| [第五章](./docs/chapter5/第五章%20评测体系与工程选型.md) | 感知、OCR、推理、幻觉与评测脚本模板 | 完成 |
+| [第六章](./docs/chapter6/第六章%20推理部署与%20Serving.md) | 单机推理、服务化、资源规划与观测 | 完成 |
+| [第七章](./docs/chapter7/第七章%20动手跑通你的第一个%20VLM.md) | `Transformers` 推理脚本、OpenAI 兼容客户端与实验任务 | 完成 |
+| [第八章](./docs/chapter8/第八章%20构建一个图像问答%20Demo.md) | `Gradio` 图文问答界面与任务模式 | 完成 |
+| [第九章](./docs/chapter9/第九章%20从单模态%20Agent%20到多模态%20Agent.md) | 多模态感知、工具调用、Agent 骨架与工作流 | 完成 |
+| [第十章](./docs/chapter10/第十章%20学习路线与开源项目实战建议.md) | 进阶路线、扩展方向与开源协作建议 | 完成 |
 
 ### Extra-Chapter
 
 | 扩展专题 | 关键内容 | 状态 |
 | --- | --- | --- |
-| [Extra01 OCR 与文档理解专题](./Extra-Chapter/Extra01-OCR与文档理解专题.md) | OCR、版面理解、字段抽取与组合工作流 | ✅ |
-| [Extra02 多图输入与比较专题](./Extra-Chapter/Extra02-多图输入与比较专题.md) | 多图编号、比较提示词、跨图归纳与多图工作流 | ✅ |
-| [Extra03 长图处理与切块策略专题](./Extra-Chapter/Extra03-长图处理与切块策略专题.md) | 长图缩放风险、切块策略、层级化分析与 Agent 衔接 | ✅ |
+| [Extra01 OCR 与文档理解专题](./Extra-Chapter/Extra01-OCR与文档理解专题.md) | OCR、版面理解、字段抽取与组合工作流 | 完成 |
+| [Extra02 多图输入与比较专题](./Extra-Chapter/Extra02-多图输入与比较专题.md) | 多图编号、比较提示词、跨图归纳与多图工作流 | 完成 |
+| [Extra03 长图处理与切块策略专题](./Extra-Chapter/Extra03-长图处理与切块策略专题.md) | 长图缩放风险、切块策略、层级化分析与 Agent 衔接 | 完成 |
 
-## 🧭 快速跳转
+## 快速跳转
 
 - 开始阅读：[前言](./docs/前言.md)
-- 理论篇 / 实战篇说明：[前言](./docs/前言.md)「理论篇与实战篇」；工程先后另见「正文章节怎么串起来」表
-- Docs 站内导航：[docs/README](./docs/README.md)（按篇分列）
+- Docs 站内导航：[docs/README](./docs/README.md)
 - 理论篇入口：[第一章](./docs/chapter1/第一章%20多模态大模型概览.md)
 - 实战篇入口：[第五章](./docs/chapter5/第五章%20评测体系与工程选型.md) · [第七章](./docs/chapter7/第七章%20动手跑通你的第一个%20VLM.md)
 - 做 Demo：[第八章 构建一个图像问答 Demo](./docs/chapter8/第八章%20构建一个图像问答%20Demo.md)
 - 看扩展专题：[扩展阅读](./docs/扩展阅读.md)
-- 研究向（微调衔接、评测汇总）：[研究向补充](./docs/研究向补充-微调与实验记录.md)
 - 看配图建议：[配图规划](./docs/配图规划.md)
 
-## 🖼️ 可选配图
-
-如果你准备把仓库做成公开展示页，建议优先补两张图：一张封面总览图（多模态输入到应用落地的全链路），一张学习路线图（概念 → 架构 → 训练 → 评测部署 → 实战 → Agent）。
-
-## 📂 项目结构
+## 项目结构
 
 ```text
-Start-MLLM
+start-mllm
 ├─ README.md
 ├─ LICENSE
 ├─ .gitignore
@@ -94,45 +86,24 @@ Start-MLLM
 │  └─ Extra03-长图处理与切块策略专题.md
 └─ docs
    ├─ README.md
-   ├─ learner_paths.py（第七、九章脚本共用：解析 `IMAGE_PATH`）
-   ├─ chapter0-环境准备.md          ← 新增：零门槛环境指南
+   ├─ learner_paths.py
+   ├─ chapter0-环境准备.md
    ├─ 前言.md
-   ├─ 术语表.md                     ← 新增：25+ 术语速查
+   ├─ 术语表.md
    ├─ _sidebar.md
    ├─ index.html
    ├─ chapter1 ~ chapter10
    ├─ chapter2/code
-   │  └─ clip_similarity_demo.py    ← 新增：CLIP 最小代码示例
    ├─ chapter4/code
-   │  ├─ create_placeholder_images.py
-   │  ├─ prepare_dataset_manifest.py
-   │  ├─ sample_multimodal_sft.jsonl
-   │  └─ lora_finetune_minimal.py   ← 新增：最小可跑 LoRA 微调
    ├─ chapter5/code
-   │  ├─ create_placeholder_images.py
-   │  ├─ eval_vlm_dataset.py
-   │  ├─ summarize_eval_results.py
-   │  ├─ sample_eval_results_output.jsonl
-   │  ├─ requirements.txt
-   │  └─ sample_eval_dataset.jsonl
    ├─ chapter7/code
-   │  ├─ requirements.txt
-   │  ├─ requirements-api.txt       ← 新增：API 方案（无 GPU）
-   │  ├─ transformers_chat.py
-   │  └─ openai_compatible_client.py
    ├─ chapter8/code
-   │  ├─ requirements.txt
-   │  ├─ .env.example
-   │  └─ app.py
    ├─ chapter9/app
-   │  ├─ .env.example
-   │  ├─ requirements.txt
-   │  ├─ agent_workflow_demo.py
-   │  └─ agent_workflow_v2.py       ← 新增：Tool-Calling Schema 版本
-   └─ 论文路径附录.md                ← 新增：从教程到论文的完整指南
+   ├─ 扩展阅读.md
+   └─ 配图规划.md
 ```
 
-## 💡 如何学习
+## 如何学习
 
 如果你是第一次系统学习多模态大模型，建议按下面顺序推进：
 
@@ -149,7 +120,7 @@ Start-MLLM
 - 做版本对比、商品多图：优先读 `Extra02`
 - 做长网页、长截图、长文档：优先读 `Extra03`
 
-## 🤝 如何贡献
+## 如何贡献
 
 欢迎任何形式的贡献：
 
@@ -158,6 +129,6 @@ Start-MLLM
 - 新增章节，例如音频、多图推理、视频理解、文档智能等
 - 补充配图、实验记录、Notebook 或 benchmark 脚本
 
-## 📜 开源协议
+## 开源协议
 
 本项目默认采用 `CC BY-NC-SA 4.0` 协议发布，适合教程、笔记、文档型仓库继续共创。
