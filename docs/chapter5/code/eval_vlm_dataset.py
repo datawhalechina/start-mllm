@@ -6,6 +6,10 @@ import os
 import time
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 def to_data_url(image_path: str) -> str:
     path = Path(image_path)

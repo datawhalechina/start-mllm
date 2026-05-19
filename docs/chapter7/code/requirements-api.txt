@@ -2,4 +2,5 @@
 # 适合没有 GPU、只通过第三方 API 跑第七章代码的读者
 pillow>=10.0.0,<12.0.0
 openai>=1.0.0,<2.0.0
+python-dotenv>=1.0.0,<2.0.0
 qwen-vl-utils

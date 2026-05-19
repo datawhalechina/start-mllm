@@ -5,11 +5,14 @@ import sys
 from pathlib import Path
 
 from openai import OpenAI
+from dotenv import load_dotenv
 
 _DOCS = Path(__file__).resolve().parents[2]
 if str(_DOCS) not in sys.path:
     sys.path.insert(0, str(_DOCS))
 from learner_paths import resolve_image_path
+
+load_dotenv()
 
 
 BASE_URL = os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:8000/v1")

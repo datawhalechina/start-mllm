@@ -40,12 +40,20 @@ pip install -r docs/chapter7/code/requirements.txt
 - `IMAGE_PATH`：图片路径
 - `QUESTION`：用户问题
 
+推荐做法：把 `docs/chapter7/code/.env.example` 复制为同目录 `.env` 后直接改值，脚本会自动读取。若你暂时不想建 `.env`，也可以直接在终端里逐行写：
+
+```powershell
+$env:MODEL_ID="你的真实模型名"
+$env:IMAGE_PATH="你的图片路径"
+$env:QUESTION="你想问模型的问题"
+```
+
 ### 3. 运行示例
 
-```bash
-set MODEL_ID=Qwen/Qwen2.5-VL-3B-Instruct
-set IMAGE_PATH=docs/chapter5/code/images/sample_ui.png
-set QUESTION=请详细描述这张图，并指出其中最重要的视觉元素。
+```powershell
+$env:MODEL_ID="Qwen/Qwen2.5-VL-3B-Instruct"
+$env:IMAGE_PATH="docs/chapter5/code/images/sample_ui.png"
+$env:QUESTION="请详细描述这张图，并指出其中最重要的视觉元素。"
 python docs/chapter7/code/transformers_chat.py
 ```
 
@@ -84,12 +92,14 @@ python docs/chapter7/code/transformers_chat.py
 
 `openai_compatible_client.py` 与 `transformers_chat.py` 共用 `docs/learner_paths.py`：**不设置 `IMAGE_PATH` 时**，若已生成第五章占位图，会自动使用 `docs/chapter5/code/images/sample_ui.png`；也可显式指定任意路径（支持在仓库根目录或章节目录下运行）。
 
-```bash
-set OPENAI_BASE_URL=http://127.0.0.1:8000/v1
-set OPENAI_API_KEY=EMPTY
-set MODEL_ID=your-vlm
-set IMAGE_PATH=docs/chapter5/code/images/sample_ui.png
-set QUESTION=这张图传递了什么信息？
+推荐先把 `docs/chapter7/code/.env.example` 复制为 `.env`，把接口地址、模型名和图片路径填进去，再直接运行脚本。若你想临时在终端里配置，最容易抄的写法是：
+
+```powershell
+$env:OPENAI_BASE_URL="你的真实接口"
+$env:OPENAI_API_KEY="你的真实密钥"
+$env:MODEL_ID="你的真实模型名"
+$env:IMAGE_PATH="docs/chapter5/code/images/sample_ui.png"
+$env:QUESTION="这张图传递了什么信息？"
 python docs/chapter7/code/openai_compatible_client.py
 ```
 

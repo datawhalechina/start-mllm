@@ -9,11 +9,11 @@
     pip install openai python-dotenv
 
 运行：
-    set OPENAI_BASE_URL=http://127.0.0.1:8000/v1
-    set OPENAI_API_KEY=EMPTY
-    set MODEL_ID=your-vlm
-    set IMAGE_PATH=docs/chapter5/code/images/sample_ui.png
-    set QUESTION=请分析这张截图并给出下一步建议。
+    $env:OPENAI_BASE_URL="你的真实接口"
+    $env:OPENAI_API_KEY="你的真实密钥"
+    $env:MODEL_ID="你的真实模型名"
+    $env:IMAGE_PATH="docs/chapter5/code/images/sample_ui.png"
+    $env:QUESTION="请分析这张截图并给出下一步建议。"
     python agent_workflow_v2.py
 """
 

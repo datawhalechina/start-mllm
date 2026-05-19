@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 
 import torch
+from dotenv import load_dotenv
 from qwen_vl_utils import process_vision_info
 from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 
@@ -10,6 +11,8 @@ _DOCS = Path(__file__).resolve().parents[2]
 if str(_DOCS) not in sys.path:
     sys.path.insert(0, str(_DOCS))
 from learner_paths import resolve_image_path
+
+load_dotenv()
 
 
 MODEL_ID = os.getenv("MODEL_ID", "Qwen/Qwen2.5-VL-3B-Instruct")
