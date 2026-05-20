@@ -40,9 +40,9 @@ GRAD_ACCUM = 4             # 等效 batch_size = 1 * 4 = 4
 LR = 2e-4
 MAX_SEQ_LEN = 512
 LORA_R = 16                # LoRA rank：越大表达能力越强，显存越高
-LORA_ALPHA = 32            # 通常 = 2 * rank
+LORA_ALPHA = 32            # 常见取值为 rank 或 2 * rank；越大对原模型影响越强
 LORA_DROPOUT = 0.05
-# Qwen2.5-VL 的 attention 模块名，不同模型需查官方文档
+# Qwen2.5-VL 的微调目标模块（含注意力与 FFN 层），不同模型需查官方文档
 TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
 # ==========================================================
 
@@ -104,7 +104,7 @@ def collate_fn(batch, processor, device):
     images = []
     for item in batch:
         conv = item["conversations"]
-        # 简单把对话拼成一段文本（真实场景应使用 apply_chat_template）
+        # 简单把对话拼成一段文本（此处为简化演示，生产环境务必使用 apply_chat_template）
         text = ""
         for c in conv:
             prefix = "User: " if c["from"] == "human" else "Assistant: "
