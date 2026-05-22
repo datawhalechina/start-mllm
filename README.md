@@ -59,7 +59,7 @@
 
 ## 在线阅读
 
-📖 **在线地址**：[https://datawhalechina.github.io/start-mllm/](https://datawhalechina.github.io/start-mllm/#/)
+📖 **在线地址**：[https://datawhalechina.github.io/start-mllm/](https://datawhalechina.github.io/start-mllm/)
 
 建议首次阅读直接从 [前言](./docs/前言.md) 开始。
 
