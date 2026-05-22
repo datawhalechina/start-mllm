@@ -119,7 +119,6 @@
 - **完善内容**：修正示例、补充解释、优化脚手架？欢迎提 Pull Request。
 - **贡献实战经验**：把你日常使用 MLLM 的踩坑记录、场景适配经验、评测心得整理成文档，贡献到 `Extra-Chapter`。像社区博客一样，让后来者少走弯路。
 
-> 新手友好：不确定怎么提 PR？参考 [Datawhale 如何参与开源](https://github.com/datawhalechina/how-to-join-in-open-source)。
 
 ## Star History
 
