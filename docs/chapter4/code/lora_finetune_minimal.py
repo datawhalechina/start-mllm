@@ -143,6 +143,9 @@ def collate_fn(batch, processor, device):
 
     # 构造 labels：复制 input_ids，将非 assistant 回复部分 mask 为 -100
     # 这样 Trainer 只在 assistant 回复上计算 loss，不会学习"复读"用户问题
+    # 注意：此 labels 构造为简化示例。由于 processor（含图像占位 token）和
+    # tokenizer（纯文本）的分词结果可能存在偏移，生产环境请使用 chat_template
+    # + tokenizer 的 return_offsets_mapping 精确计算边界。
     labels = inputs["input_ids"].clone()
     pad_token_id = getattr(processor.tokenizer, "pad_token_id", None)
     for i, asst_start in enumerate(assistant_start_chars):
